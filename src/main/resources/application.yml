@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: [your username]
+    password: [your password]
+    url: jdbc:postgresql://localhost:5432/media_upload_demo
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+google:
+  drive:
+    credentials:
+      clientId: [your client Id]
+      clientSecret: [your client secret]
+
+server:
+  port: 8087
